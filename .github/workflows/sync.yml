@@ -1,6 +1,8 @@
 # File: .github/workflows/sync.yml
 name: sync-skytoday-free
 on:  
+  schedule:
+    - cron: '1 0-23/4 * * *'
   workflow_dispatch:
   watch:
     types: started
