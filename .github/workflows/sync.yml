@@ -31,13 +31,13 @@ jobs:
           destination_branch: "master"
           github_token: ${{ secrets.PAT }}
       # 我自己同步到gitee使用，其他人可忽略
-      - name: sync github -> gitee
-        uses: Yikun/hub-mirror-action@master
-        if: env.dst_key
-        with:
-          src: github/skytoday
-          dst: gitee/skytoday
-          static_list: "free"
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
-          force_update: true
+#       - name: sync github -> gitee
+#         uses: Yikun/hub-mirror-action@master
+#         if: env.dst_key
+#         with:
+#           src: github/skytoday
+#           dst: gitee/skytoday
+#           static_list: "free"
+#           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+#           dst_token: ${{ secrets.GITEE_TOKEN }}
+#           force_update: true
