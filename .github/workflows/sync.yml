@@ -2,7 +2,7 @@
 name: sync-skytoday-free
 on:  
   schedule:
-    - cron: '1 0-23/4 * * *'
+    - cron: '20 0-23/4 * * *'
   workflow_dispatch:
   watch:
     types: started
